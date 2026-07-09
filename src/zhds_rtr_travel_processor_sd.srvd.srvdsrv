@@ -1,0 +1,15 @@
+@EndUserText.label: 'Service Definition for Travel Processor Scenario'
+define service ZHDS_RTR_TRAVEL_PROCESSOR_SD {
+  expose ZHDS_RTR_TRAVEL_PROCESSOR      as Travel;
+  expose ZHDS_RTR_BOOKING_PROCESSOR     as Booking;
+  expose ZHDS_RTR_BOOKINGSUPPL_PROCESSO as BookingSupplement;
+  expose /DMO/I_Agency                  as Agency;
+  expose /DMO/I_Customer                as Customer;
+  expose I_Currency                     as Currency;
+  expose /DMO/I_Travel_Status_VH        as TravelStatus;
+  expose /DMO/I_Carrier                 as Carrier;
+  expose /DMO/I_Connection              as Connections;
+  expose /DMO/I_Booking_Status_VH       as BookingStatus;
+  expose /DMO/I_SupplementText          as SupplementText;
+  expose /DMO/I_Supplement              as Supplement;
+}

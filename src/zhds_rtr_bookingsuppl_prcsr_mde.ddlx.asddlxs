@@ -1,0 +1,36 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: { 
+    typeName: 'Supplement',
+    typeNamePlural: 'Supplements',
+    title: { value: 'BookingSupplementId'},
+    description: { value: '_SupplementText.Description' }
+}
+annotate entity ZHDS_RTR_BOOKINGSUPPL_PROCESSO with
+{
+  @UI.facet: [{
+      id: 'idSupplementInfo',
+      purpose: #STANDARD,
+      type: #IDENTIFICATION_REFERENCE,
+      position: 10
+  }]
+
+  //    TravelId;
+  //    BookingId;
+  @UI.lineItem: [{ position: 10 }]
+  @UI.identification: [{ position: 10 }]
+  BookingSupplementId;
+  @UI.identification: [{ position: 20 }]
+  @UI.lineItem: [{ position: 20 }]
+  SupplementId;
+  @UI.identification: [{ position: 30 }]
+  @UI.lineItem: [{ position: 30 }]
+  Price;
+  @UI.identification: [{ position: 40 }]
+  @UI.lineItem: [{ position: 40 }]
+  CurrencyCode;
+  @UI.identification: [{ position: 50 }]
+  @UI.lineItem: [{ position: 50 }]
+  LastChangedAt;
+
+
+}
